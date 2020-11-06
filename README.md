@@ -1,16 +1,39 @@
-# crudfirestore
+# Crud Firestore Flutter
 
-A new Flutter project.
+# ScreenShot
 
-## Getting Started
+<img src="https://github.com/Abhishek-165/Crud_Firestore_Flutter/blob/master/images/CrudFirestore.jpeg" height="400" width="250">
 
-This project is a starting point for a Flutter application.
+# Description 
 
-A few resources to get you started if this is your first Flutter project:
+In the application, we are adding, fetching, update and delete with firebase firestore
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Adding
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+    Map<String,dynamic> mapData ={"Name":"Anonymous"};
+    CollectionReference collectionReference = FirebaseFirestore.instance.collection('data');
+    collectionReference.add(mapData);
+  
+
+ ## Fetching
+ 
+    CollectionReference collectionReference = FirebaseFirestore.instance.collection('data');
+    collectionReference.snapshots().listen((event) {
+     setState(() {
+     datas= event.docs[0].data();
+     print(datas);
+     });
+     });
+ 
+## Updating
+
+    CollectionReference collectionReference = FirebaseFirestore.instance.collection('data');
+    QuerySnapshot querySnapshot = await collectionReference.get();
+    querySnapshot.docs.reference.update({"Name":"Abhishek"});
+  
+ ## Deleting
+    CollectionReference collectionReference = FirebaseFirestore.instance.collection('data');
+    QuerySnapshot querySnapshot = await collectionReference.get();
+    querySnapshot.docs.reference.delete();
+  

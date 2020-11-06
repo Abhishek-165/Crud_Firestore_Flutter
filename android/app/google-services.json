@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1084175515842",
+    "firebase_url": "https://crudfire-80bbc.firebaseio.com",
+    "project_id": "crudfire-80bbc",
+    "storage_bucket": "crudfire-80bbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084175515842:android:5cdf6629671d4f620e7b5b",
+        "android_client_info": {
+          "package_name": "com.example.crudfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084175515842-grfs04lmn6vqu52b5rr57dm0mk75pi4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crudfirestore",
+            "certificate_hash": "d10f9d3cbbdca1a5454a8b8bd82aaca636583dd7"
+          }
+        },
+        {
+          "client_id": "1084175515842-5nvjihppg6ih83a748gu9rmr6mipgj3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7MCPqmpowX0tPM9bUWxMLnvV2i2d5fMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084175515842-5nvjihppg6ih83a748gu9rmr6mipgj3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
